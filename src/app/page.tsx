@@ -23,12 +23,16 @@ export default function Dashboard() {
           <p className="text-zinc-400 mt-1">Here is your daily overview for GMS Jain Jewellers.</p>
         </div>
         <div className="flex gap-3">
-          <button className="px-4 py-2 bg-zinc-800 text-zinc-200 rounded-lg hover:bg-zinc-700 transition-colors text-sm font-medium">
-            Generate Report
-          </button>
-          <button className="px-4 py-2 bg-amber-500 text-black rounded-lg hover:bg-amber-400 transition-colors text-sm font-bold shadow-lg shadow-amber-500/20">
-            + New Sale
-          </button>
+          <Link href="/reports">
+            <button className="px-4 py-2 bg-zinc-800 text-zinc-200 rounded-lg hover:bg-zinc-700 transition-colors text-sm font-medium">
+              Generate Report
+            </button>
+          </Link>
+          <Link href="/sales/new">
+            <button className="px-4 py-2 bg-amber-500 text-black rounded-lg hover:bg-amber-400 transition-colors text-sm font-bold shadow-lg shadow-amber-500/20">
+              + New Sale
+            </button>
+          </Link>
         </div>
       </div>
 
