@@ -87,13 +87,14 @@ export default function Dashboard() {
               { label: 'Manage Daily Rates', href: '/settings/rates' },
               { label: 'Karigar Issue / Receive', href: '/manufacturing/karigar' },
             ].map(action => (
-              <button
+              <Link
                 key={action.label}
-                className="w-full text-left p-3 rounded-lg bg-zinc-800/50 hover:bg-zinc-800 border border-zinc-700/50 hover:border-amber-500/30 transition-all group flex items-center justify-between"
+                href={action.href}
+                className="w-full text-left p-3 rounded-lg bg-zinc-800/50 hover:bg-zinc-800 border border-zinc-700/50 hover:border-amber-500/30 transition-all group flex items-center justify-between block"
               >
                 <span className="text-zinc-300 group-hover:text-amber-500 transition-colors">{action.label}</span>
                 <ArrowRight className="w-4 h-4 text-zinc-500 group-hover:text-amber-500" />
-              </button>
+              </Link>
             ))}
           </div>
 
