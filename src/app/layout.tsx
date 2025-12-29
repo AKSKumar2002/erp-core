@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className="font-sans bg-zinc-950 text-foreground overflow-hidden" style={{ fontFamily: "'Inter', sans-serif" }}>
+      <body className="font-sans bg-zinc-950 text-foreground overflow-hidden">
         <SplashScreen />
         <div className="flex h-screen w-full">
           <Sidebar />
