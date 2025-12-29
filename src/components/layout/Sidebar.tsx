@@ -107,7 +107,7 @@ const NavContent = ({
                 {collapsed ? (
                     <div className="w-1 h-8 bg-zinc-800 rounded-full" />
                 ) : (
-                    <div className="text-xs uppercase tracking-widest">Collapse</div>
+                    <div className="text-xs uppercase tracking-widest">By Dots & Decimals</div>
                 )}
             </button>
         </div>
