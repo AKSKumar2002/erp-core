@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Sidebar from "@/components/layout/Sidebar";
 import Header from "@/components/layout/Header";
+import SplashScreen from "@/components/layout/SplashScreen";
 import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className="font-sans bg-zinc-950 text-foreground overflow-hidden" style={{ fontFamily: "'Inter', sans-serif" }}>
+        <SplashScreen />
         <div className="flex h-screen w-full">
           <Sidebar />
           <div className="flex flex-col flex-1 h-full overflow-hidden md:pl-0 transition-all">
